@@ -1,0 +1,36 @@
+body {
+  font-family: sans-serif;
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 0 16px;
+  color: #222;
+}
+
+section {
+  margin-bottom: 32px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #ddd;
+}
+
+.video-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.video-item img {
+  border-radius: 4px;
+  background: #eee;
+}
+
+.video-item form {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.video-item input[type="number"] {
+  width: 70px;
+}

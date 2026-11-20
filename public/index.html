@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Video Editor</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+
+<body>
+  <h1>A Lightweight Video Editor</h1>
+
+  <section>
+    <h2>Add video</h2>
+    <input type="file" id="file-input" accept="video/mp4" />
+    <button id="upload-btn">Upload</button>
+    <p id="upload-status"></p>
+  </section>
+
+  <section>
+    <h2>Your videos</h2>
+    <button id="refresh-btn">Refresh list</button>
+    <div id="video-list"></div>
+  </section>
+
+  <script src="/client.js"></script>
+</body>
+
+</html>
