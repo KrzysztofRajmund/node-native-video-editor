@@ -41,7 +41,7 @@ const uploadVideo = async (req, res, handleErr) => {
   }
 
   try {
-    await fs.mkdir(`./storage/${videoId}`);
+    await fs.mkdir(`./storage/${videoId}`, { recursive: true });
     const fullPath = `./storage/${videoId}/original.${extension}`; // the original video path
     const file = await fs.open(fullPath, "w");
     const fileStream = file.createWriteStream();

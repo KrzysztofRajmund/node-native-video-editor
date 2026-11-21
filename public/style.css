@@ -34,3 +34,22 @@ section {
 .video-item input[type="number"] {
   width: 70px;
 }
+
+.dominant-swatch {
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  margin-top: 6px;
+}
+
+.palette {
+  display: flex;
+  gap: 2px;
+  margin-top: 4px;
+}
+
+.palette span {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}

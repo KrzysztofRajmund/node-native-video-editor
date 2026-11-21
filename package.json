@@ -4,9 +4,10 @@
   "description": "A lightweight video editor using only Node.js core modules, the ffmpeg CLI and the native binary files.",
   "main": "src/index.js",
   "scripts": {
+    "build:native": "./native/build.sh",
     "start": "node src/index.js",
     "cluster": "node src/cluster.js"
   },
-  "author": "",
+  "author": "KN Tech",
   "license": "ISC"
 }

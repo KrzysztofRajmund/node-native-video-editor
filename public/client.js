@@ -40,7 +40,11 @@ async function loadVideos() {
     item.innerHTML = `
       <img src="/api/asset?type=thumbnail&videoId=${video.videoId}" width="120" />
       <div>
-        <p>${video.name}</p>
+        <p>${video.name}.${video.extension} (${video.dimensions.width}x${video.dimensions.height})</p>
+        <div class="dominant-swatch" style="background:${video.dominant || "#000"}"></div>
+        <div class="palette">
+          ${(video.palette || []).map((color) => `<span style="background:${color}"></span>`).join("")}
+        </div>
         <a href="/api/asset?type=original&videoId=${video.videoId}">Download original</a>
         <form class="resize-form" data-video-id="${video.videoId}">
           <input type="number" placeholder="width" class="width-input" required />
